@@ -1045,7 +1045,7 @@ function renderShelf(arriveId){
   const filteredView = ui.status !== "all" || ui.cat !== "all";
   if (!filteredView) push(`<button class="addcard" style="--bw:${addW}px;--bh:${avgH}px" id="shelfAdd"><span>＋</span>책 추가하기</button>`, addW + 22);
   if (!list.length){
-    rows[0].unshift(`<div class="empty-row">${filteredView ? "이 분류에 꽂힌 책이 아직 없어요." : `<div>아직 비어 있는 책장이에요.<br>첫 책을 꽂아 보세요.</div><button class="btn small" id="sampleBtn" style="color:var(--gold-2)">예시 책 몇 권 꽂아보기</button>`}</div>`);
+    rows[0].unshift(`<div class="empty-row">${filteredView ? "이 분류에 꽂힌 책이 아직 없어요." : `<div>아직 비어 있는 책장이에요.<br>첫 책을 꽂아 보세요.</div><button class="btn small" id="sampleBtn" style="color:var(--gold-2);background:rgba(20,10,4,.45)">예시 책 몇 권 꽂아보기</button>`}</div>`);
   }
   const nw = Math.round(150 * s);
   if (!filteredView && window.innerWidth >= 600){
